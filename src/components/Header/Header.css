@@ -1,0 +1,9 @@
+.nav-main {
+    display: flex;
+    background-color: red;
+}
+
+.nav-main ul {
+    display: flex;
+    list-style: none;
+}
