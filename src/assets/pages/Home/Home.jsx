@@ -1,0 +1,9 @@
+import './Home.css';
+
+export default function Home() {
+    return (
+        <>
+            <h1>MACONHA</h1>
+        </>
+    );
+}
