@@ -95,3 +95,19 @@
 .card {
     width: 17rem;
 }
+.app-image-section {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.app-image-section img {
+    height: 900px;
+    object-fit: contain;
+}

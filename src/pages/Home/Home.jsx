@@ -1,4 +1,5 @@
 import './Home.css';
+import imgcell from '../../assets/images/cell-phone.png'
 import placeholder from '../../assets/images/placeholder.jpg'
 import icon from '../../assets/images/marker1.png'
 
@@ -74,7 +75,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='app-image-section'>
-                    <img src='#'/>
+                    <img src={imgcell} alt="Celular com aplicativo" />
                 </div>
             </div>
         </>
