@@ -20,7 +20,9 @@ export default function Header() {
         <header>
             <div className={`container-nav-main ${!scrolled ? 'ativo' : ''}`}>
                 <nav className="nav-main">
-                    <img src={owlterLogoPreto} alt="Owlter logo preto" />
+                    <Link to="/">
+                        <img src={owlterLogoPreto} alt="Owlter logo preto" />
+                    </Link>
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/sobre">Sobre</Link></li>
@@ -30,7 +32,9 @@ export default function Header() {
             </div>
             <div className={`container-nav-alt ${scrolled ? 'ativo' : ''}`}>
                 <nav className="nav-alt">
-                    <img src={owlterLogoBranco} alt="Owlter logo branco" />
+                    <Link to="/">
+                        <img src={owlterLogoBranco} alt="Owlter logo branco" />
+                    </Link>
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/sobre">Sobre</Link></li>
