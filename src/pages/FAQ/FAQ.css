@@ -1,0 +1,103 @@
+.container-faq {
+    display: flex;
+    margin: 0 10rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-texto-faq {
+    font-family: "Poppins", sans-serif;
+}
+
+.container-texto-faq h6 {
+    font-size: 1rem;
+}
+
+.container-texto-faq h6:first-child {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.container-texto-faq h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+
+.container-texto-faq h6:last-child {
+    font-weight: 300;
+    width: 16rem;
+    margin-top: 1rem;
+}
+
+.container-pergunta {
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    padding: 1rem 1.75rem;
+}
+
+.container-pergunta:not(:last-child) {
+    margin-bottom: 1.25rem;
+}
+
+.pergunta {
+    display: flex;
+    width: 50rem;
+}
+
+.pergunta span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.container-pergunta-botao {
+    display: flex;
+    margin-left: auto;
+    background-color: black;
+    border: none;
+    padding: 2px;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.container-pergunta-botao:hover {
+    cursor: pointer;
+}
+
+.container-resposta {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.3s ease;
+}
+
+.container-pergunta-botao.open {
+    transform: rotate(180deg);
+}
+
+.container-pergunta.expanded .container-resposta {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.container-resposta span {
+    margin-top: 1rem ;
+    display: block;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.container-resposta .aberta {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.container-resposta .fechada {
+    opacity: 0;
+    max-height: 0;
+}
+
