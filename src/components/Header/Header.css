@@ -1,6 +1,5 @@
 .container-nav-main, 
 .container-nav-alt {
-    padding: 0.3rem 2rem;
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -21,8 +20,13 @@
   pointer-events: auto;
 }
 
-.nav-main{ 
+.nav-main {
     display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%;
+    padding: 0.5rem 1rem; 
+    gap: 15rem;
 }
 
 .container-nav-alt {
@@ -35,26 +39,36 @@
     z-index: 1000;
 }
 
-.nav-alt { 
-
+.nav-alt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
     background-color: black;
     color: white;
     width: 80%;
     border-radius: 0 0 0.4rem 0.4rem;
+    padding: 0.5rem 1rem; 
     transition: all 0.3s ease;
 }
- 
+
+.nav-main ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: rem; 
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0;
+}
 
 .nav-main ul, .nav-alt ul {
     display: flex;
     list-style: none;
     align-items: center;
-    width: 35rem;
-    margin-left: 17rem;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 300;
+
 }
+
 
 .nav-main *:not(ul):hover {
     cursor: pointer;
@@ -73,11 +87,40 @@
 }
 
 .nav-alt ul {
-    margin-left: auto;
-    width: 30rem;
-    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+    margin: 0; /* remove margin-left */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
+
+
 
 .nav-alt li:last-child {
     margin-right: 6.5rem;
+}
+
+.container-nav-main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* ou center se quiser o conteúdo centralizado mas começando da esquerda */
+}
+
+.nav-main ul li a,
+.nav-alt ul li a {
+  color: inherit; /* herda a cor do nav */
+  text-decoration: none; /* remove underline */
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.nav-main ul li a:hover,
+.nav-alt ul li a:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
 }

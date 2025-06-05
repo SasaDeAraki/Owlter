@@ -5,6 +5,7 @@ import img2 from './../../assets/images/img2.png'
 import img3 from './../../assets/images/img3.png'
 import icon1 from './../../assets/images/icon1.png'
 import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 
 export default function Sobre() {
   const cards = [
