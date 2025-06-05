@@ -91,12 +91,11 @@
     list-style: none;
     align-items: center;
     gap: 3rem;
-    margin: 0; /* remove margin-left */
+    margin: 0; 
     font-family: "Poppins", sans-serif;
     font-size: 1.25rem;
     font-weight: 300;
 }
-
 
 
 .nav-alt li:last-child {
@@ -106,13 +105,13 @@
 .container-nav-main {
     width: 100%;
     display: flex;
-    justify-content: flex-start; /* ou center se quiser o conteúdo centralizado mas começando da esquerda */
+    justify-content: flex-start;
 }
 
 .nav-main ul li a,
 .nav-alt ul li a {
-  color: inherit; /* herda a cor do nav */
-  text-decoration: none; /* remove underline */
+  color: inherit; 
+  text-decoration: none; 
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
