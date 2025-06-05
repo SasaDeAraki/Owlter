@@ -10,7 +10,8 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route exact path="/" Component={ Sobre }/>
+            <Route exact path="/" Component={ Home }/>
+            <Route path="/sobre" Component={ Sobre }/>
             <Route path="/faq" Component={ FAQ }/>
           </Routes>
         </div>
