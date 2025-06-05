@@ -1,10 +1,10 @@
 import './Home.css';
-import imgcell from '../../assets/images/cell-phone.png'
-import placeholder from '../../assets/images/placeholder.jpg'
-import img_rel from '../../assets/images/img-rel.png'
-import img_cor from '../../assets/images/img-cor.png'
-import img_pes from '../../assets/images/img-pes.png'
-import img_fed from '../../assets/images/img-fed.png'
+import imgcell from '../../assets/images/cell-phone.png';
+import placeholder from '../../assets/images/placeholder.jpg';
+import img_rel from '../../assets/images/img-rel.png';
+import img_cor from '../../assets/images/img-cor.png';
+import img_pes from '../../assets/images/img-pes.png';
+import img_fed from '../../assets/images/img-fed.png';
 
 export default function Home() {
     return (
@@ -15,21 +15,18 @@ export default function Home() {
                     <p>Conectamos pessoas a informações vitais em tempo real. Nossa plataforma ajuda você a monitorar desastres, enviar alertas e proteger comunidades com precisão e agilidade.</p>
                 </div>
                 <div className='banner'>
-                    <img src={placeholder}></img>
+                    <img src={placeholder} alt="Banner" />
                 </div>
             </div>
             <div className='pitch-section'>
-                <div>
+                <div className='video-container'>
                     <iframe
-                        width="760"
-                        height="515"
                         src="https://www.youtube.com/embed/-RS-jl78_lY?si=1P3Y9NFM5fBhIyQF"
                         title="Vídeo pitch"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
-
                 </div>
                 <div className='pitch-texto'>
                     <h2>Informação confiável quando mais importa</h2>
@@ -45,14 +42,14 @@ export default function Home() {
                     <div className='app-cards-section'>
                         <div className='card-row'>
                             <div className='card'>
-                                <img src={ img_rel }/>
+                                <img src={img_rel} alt="Ícone de alertas" />
                                 <div>
-                                    <h3> Alertas em tempo real</h3>
+                                    <h3>Alertas em tempo real</h3>
                                     <p>Receba notificações imediatas sobre desastres próximos e futuros.</p>
                                 </div>
                             </div>
                             <div className='card'>
-                                <img src={ img_cor }/>
+                                <img src={img_cor} alt="Ícone de mapa" />
                                 <div>
                                     <h3>Mapa interativo</h3>
                                     <p>Visualize eventos e áreas de risco atualizadas por usuários e autoridades.</p>
@@ -61,14 +58,14 @@ export default function Home() {
                         </div>
                         <div className='card-row'>
                             <div className='card'>
-                                <img src={ img_pes }/>
+                                <img src={img_pes} alt="Ícone de comunidade" />
                                 <div>
                                     <h3>Comunidade colaborativa</h3>
                                     <p>Compartilhe relatos locais e ajude a validar informações.</p>
                                 </div>
                             </div>
                             <div className='card'>
-                                <img src={ img_fed }/>
+                                <img src={img_fed} alt="Ícone de feedback" />
                                 <div>
                                     <h3>Feedback inteligente</h3>
                                     <p>Contribua com atualizações sobre alertas para manter todos informados.</p>
