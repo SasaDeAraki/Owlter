@@ -1,8 +1,17 @@
+import { motion } from 'framer-motion';
+import './InfoCard.css'; // certifique-se de manter os estilos
+
 export function InfoCard({ title, text, image, icon }) {
   const onlyImage = image && !title && !text && !icon;
 
   return (
-    <div className="info-card">
+    <motion.div
+      className="info-card"
+      initial={{ scale: 0.9, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      whileHover={{ scale: 1.03 }}
+    >
       {onlyImage ? (
         <img src={image} alt={title} className="card-image-full" />
       ) : (
@@ -19,6 +28,6 @@ export function InfoCard({ title, text, image, icon }) {
           </div>
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
