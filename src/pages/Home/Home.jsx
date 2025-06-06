@@ -5,6 +5,7 @@ import img_rel from '../../assets/images/img-rel.png';
 import img_cor from '../../assets/images/img-cor.png';
 import img_pes from '../../assets/images/img-pes.png';
 import img_fed from '../../assets/images/img-fed.png';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
       </div>
 
       <div className='pitch-section'>
-        <div>
+        <div className='video-container'>
           <iframe
             width="760"
             height="515"
@@ -44,6 +45,7 @@ export default function Home() {
           <p>Nossa missão é oferecer dados claros e acessíveis sobre riscos e desastres, ajudando você a tomar decisões seguras em momentos críticos.</p>
         </div>
       </div>
+
 
       <div className='app-section'>
         <div className='app-text-section'>
