@@ -29,10 +29,8 @@ export default function Home() {
       </div>
 
       <div className='pitch-section'>
-        <div>
+        <div className='video-container'>
           <iframe
-            width="760"
-            height="515"
             src="https://www.youtube.com/embed/-RS-jl78_lY?si=1P3Y9NFM5fBhIyQF"
             title="Vídeo pitch"
             frameBorder="0"
@@ -45,6 +43,7 @@ export default function Home() {
           <p>Nossa missão é oferecer dados claros e acessíveis sobre riscos e desastres, ajudando você a tomar decisões seguras em momentos críticos.</p>
         </div>
       </div>
+
 
       <div className='app-section'>
         <div className='app-text-section'>
