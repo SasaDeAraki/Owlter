@@ -32,7 +32,7 @@ export default function Home() {
           <iframe
             width="760"
             height="515"
-            src="https://www.youtube.com/embed/-RS-jl78_lY?si=1P3Y9NFM5fBhIyQF"
+            src="https://www.youtube.com/embed/DVNYfuMrHCI"
             title="Vídeo pitch"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
